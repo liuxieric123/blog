@@ -1,0 +1,6 @@
+{
+    "dependencies": {
+        "markdown-it-latex": "^0.2.0",
+        "vuepress-plugin-mathjax": "1.2.8"
+    }
+}
