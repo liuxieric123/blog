@@ -2,7 +2,7 @@
 //
 // Variable
 // -----------------------------------------
-fontSize = 14px
+fontSize = 17px
 fontFamily = 'Source Sans Pro', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif
 monospaceFontFamily = 'Ubuntu Mono', 'PT Mono', Consolas, Monaco, Menlo, monospace
 bgColor = #fff
@@ -29,7 +29,7 @@ body
   -webkit-text-size-adjust none
   // size
   position relative
-  max-width 700px
+  max-width 800px
   margin 0 auto
   padding 0
   background bgColor
@@ -37,6 +37,7 @@ body
 
 h1
     font-weight 800
+    font-size: fontSize * 1.7
     position relative
     text-align: center
 h2,
@@ -45,6 +46,7 @@ h4,
 h5,
 h6
   font-weight 400
+  font-size: fontSize * 1.3
   position relative
 
 a
@@ -61,6 +63,22 @@ video,
 canvas,
 iframe
   max-width 100%
+  display: flex
+  flex-direction: row
+  margin: auto
+
+table
+    border-collapse: collapse
+    text-align: center
+    max-width: 90%
+    min-width: 50%
+    position relative
+    margin: auto
+
+th
+td
+    border: 1px solid lineColor
+    padding: 7px
 
 //
 // Shared
@@ -107,7 +125,7 @@ iframe
 .item-title
   display inline-block
   margin-bottom 10px
-  font-size fontSize + 2
+  font-size fontSize - 1
   color textColor
 
   &:hover
@@ -115,12 +133,12 @@ iframe
 
 .item-date
   display inline-block
-  font-size fontSize - 2
+  font-size fontSize - 3
   color metaColor
   padding-top 12px
 
 .item-intro
-  font-size fontSize - 2
+  font-size fontSize - 3
   color metaColor
   padding-top 2px
   border-top 1px solid lineColor
@@ -212,6 +230,7 @@ iframe
         color metaColor
         border-top 1px solid lineColor
         padding-inline-start: 20px 
+        font-size: fontSize - 3
 
 // Override Prism
 // -----------------------------------------

@@ -35,8 +35,13 @@ export default {
     computed: {
         filteredList() {
         // Order by publish date, desc
-        // console.log(this.$site.pages)
-            return this.$site.pages
+            return this.$site.pages.filter(function (item) {
+                if (item.title)
+                    return true
+                return false
+            }).sort(function(item1, item2) {
+                return (new Date(item2.frontmatter.date) - new Date(item1.frontmatter.date))
+            })
         }
     },
 }

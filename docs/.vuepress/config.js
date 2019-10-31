@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'Hello VuePress',
-  description: 'Just playing around',
+  title: 'Liuxieric123',
+  description: 'liuxieric123 个人博客',
   themeConfig: {
     displayAllHeaders: false // 默认值：false
   },
